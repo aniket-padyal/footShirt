@@ -3,9 +3,9 @@ import React from "react";
 const Searchbar = () => {
   return (
     <div>
-      <div className="w-screen border ">
-        <nav className="w-[90%] py-3.5 m-auto flex items-center justify-between cursor-default border ">
-          <div className="w-60 flex items-center ml-4 pl-2 border-2 rounded-4xl  hover:border-blue-500  transition-all  ">
+      <div className="w-screen ">
+        <nav className="w-[90%] py-5 m-auto flex items-center justify-between cursor-default border ">
+          <div className="w-60 flex items-center pl-2 border-2 rounded-4xl  hover:border-blue-500 transition-all  ">
             {/* search svg */}
             <svg
               xmlns="http://www.w3.org/2000/svg"

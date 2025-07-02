@@ -1,9 +1,3 @@
 # My React Project
 
-This is a simple React project built with Tailwind CSS.
-
-## How to run
-
-```bash
-npm install
-npm start
+This is a React project about e-commerce website named as FootShirts, in specific website for selling football t-shirt's online. Built with Tailwind CSS.

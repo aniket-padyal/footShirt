@@ -4,25 +4,46 @@ const Navbar = () => {
   return (
     <div>
       <div className="w-screen ">
-        <nav className="w-[90%] py-6 m-auto flex items-center justify-between ">
-          <div className="font-bold text-2xl cursor-default ">FootShirts</div>
+        <nav className="w-[93%] sm:w-[85%] py-6 m-auto flex items-center justify-between ">
+          <div className="font-bold text-3xl cursor-default hover:text-gray-400 transition-all ">
+            FootShirts
+          </div>
 
-          <ul className="flex gap-5 ">
+          {/* hamburger svg */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="size-8 sm:hidden "
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+
+          <ul className="hidden sm:flex gap-6 ">
             <li>
               <a
                 href=""
-                className="bg-blue-600 text-white font-bold px-3 py-1.25 rounded-lg hover:border-blue-600 "
+                className="bg-blue-600 text-white border-3 border-transparent font-bold px-4 py-1.75 rounded-lg hover:border-blue-600 hover:text-black hover:bg-white transition-all "
               >
                 Sign in
               </a>
             </li>
             <li>
-              <a href="" className="font-bold  ">
+              <a
+                href=""
+                className="font-bold hover:text-pink-600 transition-all "
+              >
                 Wishlist
               </a>
             </li>
             <li>
-              <a href="" className="flex items-center gap-1 font-bold ">
+              <a href="" className="flex items-center gap-1 font-bold hover:text-blue-600 transition-all ">
                 {/* cart svg */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

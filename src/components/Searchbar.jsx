@@ -4,8 +4,8 @@ const Searchbar = () => {
   return (
     <div>
       <div className="w-screen ">
-        <nav className="w-[90%] py-5 m-auto flex items-center gap-5 cursor-default  ">
-          <div className="w-60 flex items-center pl-2 border-2 rounded-4xl hover:border-blue-500 transition-all ">
+        <nav className="w-[93%] sm:w-[85%] py-6 m-auto flex items-center gap-5 cursor-default  ">
+          <div className="w-70 flex items-center pl-2 border-2 rounded-4xl hover:border-blue-500 transition-all ">
             {/* search svg */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -29,21 +29,7 @@ const Searchbar = () => {
             />
           </div>
 
-          {/* hamburger svg */}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="size-8 sm:hidden "
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-            />
-          </svg>
+          
 
           <ul className="flex font-bold gap-5 max-sm:hidden ">
             <li className="hover:text-blue-600 transition-all ">

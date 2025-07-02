@@ -4,10 +4,10 @@ const Navbar = () => {
   return (
     <div>
       <div className="w-screen ">
-        <nav className="w-[90%] py-5 m-auto flex items-center justify-between ">
+        <nav className="w-[90%] py-6 m-auto flex items-center justify-between ">
           <div className="font-bold text-2xl cursor-default ">FootShirts</div>
 
-          <ul className="flex gap-4 ">
+          <ul className="flex gap-5 ">
             <li>
               <a
                 href=""

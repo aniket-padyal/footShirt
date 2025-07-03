@@ -5,7 +5,7 @@ const Searchbar = () => {
     <div>
       <div className="w-screen ">
         <nav className="w-[93%] sm:w-[85%] py-6 m-auto flex items-center gap-5 cursor-default  ">
-          <div className="w-70 flex items-center pl-2 border-2 rounded-4xl hover:border-blue-500 transition-all ">
+          <div className="w-full sm:w-70 flex items-center pl-2 border-2 rounded-4xl hover:border-blue-500 transition-all ">
             {/* search svg */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -13,7 +13,7 @@ const Searchbar = () => {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="size-6 cursor-pointer "
+              className="size-7 cursor-pointer "
             >
               <path
                 strokeLinecap="round"
@@ -23,7 +23,7 @@ const Searchbar = () => {
             </svg>
 
             <input
-              className="w-full px-2 py-1.5 outline-none font-bold rounded-2xl transition-all "
+              className="w-full p-2 outline-none font-bold rounded-2xl transition-all "
               type="search"
               spellCheck="false"
             />
@@ -31,7 +31,7 @@ const Searchbar = () => {
 
           
 
-          <ul className="flex font-bold gap-5 max-sm:hidden ">
+          <ul className="sm:flex font-bold gap-5 hidden ">
             <li className="hover:text-blue-600 transition-all ">
               <a href="">Discover</a>
             </li>

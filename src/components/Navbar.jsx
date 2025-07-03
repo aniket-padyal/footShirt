@@ -3,8 +3,8 @@ import React from "react";
 const Navbar = () => {
   return (
     <div>
-      <div className="w-screen ">
-        <nav className="w-[93%] sm:w-[85%] py-6 m-auto flex items-center justify-between ">
+      <div className="w-screen  ">
+        <nav className="w-[90] sm:w-[85%] py-5 m-auto flex items-center justify-between  ">
           <div className="font-bold text-3xl cursor-default hover:text-gray-400 transition-all ">
             FootShirts
           </div>
@@ -29,7 +29,7 @@ const Navbar = () => {
             <li>
               <a
                 href=""
-                className="bg-blue-600 text-white border-3 border-transparent font-bold px-4 py-1.75 rounded-lg hover:border-blue-600 hover:text-black hover:bg-white transition-all "
+                className="bg-blue-600 text-white border-3 border-transparent font-bold px-4 py-1.75 rounded-lg hover:border-blue-600 hover:text-black hover:bg-[rgb(225, 225, 225);] transition-all "
               >
                 Sign in
               </a>

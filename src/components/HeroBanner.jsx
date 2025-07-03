@@ -31,13 +31,13 @@ const HeroBanner = () => {
   return (
     <div>
       <div className="w-screen ">
-        <div className="w-[93%] sm:w-[85%] h-[76vh] m-auto rounded-lg relative ">
+        <div className="w-[93%] sm:w-[85%] h-40 sm:h-[75vh] m-auto rounded-lg relative  ">
           <img
-            className="rounded-3xl w-full h-full object-cover transition-all ease-in-out "
+            className="rounded-2xl w-full h-full object-cover transition-all ease-in-out "
             src={images[currentIndex]}
           />
 
-          <div className="flex items-center justify-between px-6 absolute bottom-2 w-full">
+          <div className="hidden sm:flex items-center justify-between px-6 absolute bottom-2 w-full">
             <h1 className="text-white text-xl font-bold italic leading-relaxed tracking-wide px-4 py-6">
               “Playing football is very simple, but playing simple football is
               the hardest thing there is.”

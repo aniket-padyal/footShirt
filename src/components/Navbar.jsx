@@ -3,8 +3,8 @@ import React from "react";
 const Navbar = () => {
   return (
     <div>
-      <div className="w-screen  ">
-        <nav className="w-[90] sm:w-[85%] py-5 m-auto flex items-center justify-between  ">
+      <div className="w-screen ">
+        <nav className="w-[90%] sm:w-[85%] py-5 m-auto flex items-center justify-between ">
           <div className="font-bold text-3xl cursor-default hover:text-gray-400 transition-all ">
             FootShirts
           </div>
@@ -43,7 +43,10 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="" className="flex items-center gap-1 font-bold hover:text-blue-600 transition-all ">
+              <a
+                href=""
+                className="flex items-center gap-1 font-bold hover:text-blue-600 transition-all "
+              >
                 {/* cart svg */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

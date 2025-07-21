@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="w-screen ">
         <nav className="w-[90%] sm:w-[85%] py-5 m-auto flex items-center justify-between ">
           <Link
-            className="font-bold text-3xl cursor-default hover:text-gray-400 transition-all "
+            className="font-bold text-3xl hover:text-blue-600 transition-all "
             to="/"
           >
             FootShirts

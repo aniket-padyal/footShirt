@@ -19,10 +19,10 @@ const Signin = () => {
 
   return (
     <>
-      <div className="h-[88.10vh] flex justify-center items-center ">
-        <div className="w-80 form flex flex-col shadow-lg px-7 py-10 rounded-lg font-bold ">
+      <div className="h-[75vh] flex justify-center items-center ">
+        <div className="w-90 form flex flex-col shadow-lg px-7 py-10 rounded-lg font-bold ">
           {/* heading */}
-          <p className="text-blue-700 text-xl cursor-default mb-7.5 text-center ">
+          <p className="text-blue-700 text-2xl cursor-default mb-8.5 text-center ">
             Sign in to your account
           </p>
 

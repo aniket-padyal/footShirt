@@ -22,22 +22,22 @@ const HeroBanner = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
+  // const handleNext = () => {
+  //   setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  // };
 
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
+  // const handlePrev = () => {
+  //   setCurrentIndex((prevIndex) =>
+  //     prevIndex === 0 ? images.length - 1 : prevIndex - 1
+  //   );
+  // };
 
   return (
     <div>
       <div className="w-screen ">
         <div className="w-[93%] sm:w-[85%] h-40 sm:h-[73vh] m-auto rounded-lg relative  ">
           <img
-            className="rounded-2xl w-full h-full object-cover transition-all ease-in-out "
+            className="rounded-2xl w-full h-full object-cover "
             src={images[currentIndex]}
           />
 
@@ -51,7 +51,7 @@ const HeroBanner = () => {
               </span>
             </h1>
 
-            <div className="hidden sm:flex gap-2 text-white ">
+            {/* <div className="hidden sm:flex gap-2 text-white ">
               <button className="cursor-pointer " onClick={handlePrev}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +84,7 @@ const HeroBanner = () => {
                   />
                 </svg>
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

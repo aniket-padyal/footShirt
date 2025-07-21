@@ -1,14 +1,12 @@
 import React from "react";
-import Searchbar from "./Searchbar";
 import HeroBanner from "./HeroBanner";
 
-const Home = () => {
+const Discover = () => {
   return (
     <div>
-      <Searchbar />
       <HeroBanner />
     </div>
   );
 };
 
-export default Home;
+export default Discover;

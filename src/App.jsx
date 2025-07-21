@@ -1,16 +1,28 @@
-import "./App.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Searchbar from "./components/Searchbar";
-import HeroBanner from "./components/HeroBanner";
+import Layout from "./components/Layout";
+import Signin from "./components/Signin";
+import Wishlist from "./components/Wishlist";
+import Mycart from "./components/Mycart";
+import Home from "./components/Home";
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        { path: "", element: <Home /> },
+        { path: "signIn", element: <Signin /> },
+        { path: "wishList", element: <Wishlist /> },
+        { path: "myCart", element: <Mycart /> },
+      ],
+    },
+  ]);
+
   return (
     <>
-      <Navbar />
-
-      <Searchbar />
-
-      <HeroBanner />
+      <RouterProvider router={router} />
     </>
   );
 }

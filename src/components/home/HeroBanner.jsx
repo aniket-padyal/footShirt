@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
-import img1 from "../assets/images/image1.jpg";
-import img2 from "../assets/images/image2.jpg";
-import img3 from "../assets/images/image3.jpg";
-import img4 from "../assets/images/image4.jpg";
-import img5 from "../assets/images/image5.jpg";
-import img6 from "../assets/images/image6.jpg";
-import img7 from "../assets/images/image7.jpg";
-import img8 from "../assets/images/image8.jpg";
-import img9 from "../assets/images/image9.jpg";
-import img10 from "../assets/images/image10.jpg";
+import img1 from "../../assets/images/image1.jpg";
+import img2 from "../../assets/images/image2.jpg";
+import img3 from "../../assets/images/image3.jpg";
+import img4 from "../../assets/images/image4.jpg";
+import img5 from "../../assets/images/image5.jpg";
+import img6 from "../../assets/images/image6.jpg";
+import img7 from "../../assets/images/image7.jpg";
+import img8 from "../../assets/images/image8.jpg";
+import img9 from "../../assets/images/image9.jpg";
+import img10 from "../../assets/images/image10.jpg";
 
 const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
 
@@ -35,7 +35,7 @@ const HeroBanner = () => {
   return (
     <div>
       <div className="w-screen ">
-        <div className="w-[93%] sm:w-[85%] h-40 sm:h-[73vh] m-auto rounded-lg relative  ">
+        <div className="w-[93%] sm:w-[85%] h-40 sm:h-[70vh] m-auto rounded-lg relative  ">
           <img
             className="rounded-2xl w-full h-full object-cover "
             src={images[currentIndex]}

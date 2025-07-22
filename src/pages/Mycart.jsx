@@ -1,4 +1,3 @@
-// CartDrawer.jsx
 import React from "react";
 
 const CartDrawer = ({ isOpen, onClose }) => {

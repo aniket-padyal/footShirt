@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import CartDrawer from "../../pages/Mycart";
 
 const Navbar = () => {
+  const [isCartOpen, setIsCartOpen] = useState(false);
+
+  const toggleCart = () => {
+    setIsCartOpen((prev) => !prev);
+  };
+
   return (
     <div>
       <div className="w-screen ">
@@ -51,7 +58,8 @@ const Navbar = () => {
             <li>
               <Link
                 to="/myCart"
-                className="flex items-center gap-1 font-bold hover:text-blue-600 transition-all "
+                className="flex items-center gap-1 font-bold relative hover:text-blue-600 transition-all "
+                onClick={toggleCart}
               >
                 {/* cart svg */}
                 <svg
@@ -73,6 +81,8 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
+
+        <CartDrawer isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
       </div>
     </div>
   );

@@ -1,56 +1,31 @@
-const callouts = [
-  {
-    name: "Desk and Office",
-    description: "New arrivals",
-    imageSrc:
-      "https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-02-edition-01.jpg",
-    imageAlt:
-      "Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.",
-    href: "#",
-  },
-  {
-    name: "Self-Improvement",
-    description: "On sale",
-    imageSrc:
-      "https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-02-edition-02.jpg",
-    imageAlt:
-      "Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.",
-    href: "#",
-  },
-  {
-    name: "Travel",
-    description: "Get retro",
-    imageSrc:
-      "https://tailwindcss.com/plus-assets/img/ecommerce-images/home-page-02-edition-03.jpg",
-    imageAlt: "Collection of four insulated travel bottles on wooden shelf.",
-    href: "#",
-  },
-];
+import productData from "../data/productData";
 
 export default function Category() {
+  const featured = productData.filter((p) => p.featured);
+
   return (
     <div className="bg-gray-100">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8  ">
-        <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
+        <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-30 ">
           <h2 className="text-2xl font-bold text-gray-900">Collections</h2>
 
-          <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:space-y-0 lg:gap-x-6  ">
-            {callouts.map((callout) => (
-              <div key={callout.name} className="group relative  ">
+          <div className="mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            {featured.map((callout) => (
+              <div
+                key={callout.id}
+                className=" group relative cursor-pointer  "
+              >
                 <img
                   alt={callout.imageAlt}
-                  src={callout.imageSrc}
-                  className="w-full rounded-lg bg-white object-cover group-hover:opacity-75 max-sm:h-80 sm:aspect-2/1 lg:aspect-square"
+                  src={callout.imgSrc}
+                  className="w-full rounded-xl bg-white object-cover group-hover:opacity-75  lg:aspect-square"
                 />
-                <h3 className="mt-6 text-sm text-gray-500">
+                <h3 className="mt-2 text-center text-gray-900 font-bold ">
                   <a href={callout.href}>
                     <span className="absolute inset-0" />
-                    {callout.name}
+                    {callout.category}
                   </a>
                 </h3>
-                <p className="text-base font-semibold text-gray-900">
-                  {callout.description}
-                </p>
               </div>
             ))}
           </div>

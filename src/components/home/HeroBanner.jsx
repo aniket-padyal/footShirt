@@ -34,8 +34,8 @@ const HeroBanner = () => {
 
   return (
     <div>
-      <div className="w-screen ">
-        <div className="w-[93%] sm:w-[85%] h-40 sm:h-[70vh] m-auto rounded-lg relative  ">
+      <div className=" mx-auto max-w-7xl mb-10 ">
+        <div className="w-[93.5%] h-40 sm:h-[70vh] m-auto rounded-lg relative  ">
           <img
             className="rounded-2xl w-full h-full object-cover "
             src={images[currentIndex]}

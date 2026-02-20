@@ -1,4 +1,4 @@
-import productData from "../data/productData";
+import productData from "../data/product";
 
 export default function ProductList() {
   return (
